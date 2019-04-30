@@ -1,0 +1,66 @@
+/*grid***********************************/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.6fr 0.7fr 0.7fr;
+    grid-template-areas: "photomain""nometjob""navbar";
+}
+
+.photomain {
+    grid-area: photomain;
+}
+
+.nometjob {
+    grid-area: nometjob;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+/*body***********************************/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    flex-direction: column
+}
+
+/*Photomain******************************/
+
+.photomain {
+    width: 100%
+    
+}
+
+/*nometjob****************************/
+
+.nometjob {
+    background-color: blue;
+    font-family: 'Roboto';
+    color: white;
+    text-align: center
+
+}
+
+.nometjob h1 {
+    font-weight: lighter
+}
+
+/*navbar*****************************/
+
+
+.carré > a {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-color: red;
+    align-items: center;
+    text-align: center;
+    left:5%;
+    right:5%
+
+}
